@@ -7,15 +7,15 @@ Dans le repere (0,x,y,z) :
 
 Appliquons à ce sommet l'equation parametrique suivante :
 
-x(phi)=cos(phi)*r
+      x(phi)=cos(phi)*r
 
-y(phi)=sin(phi)*r
+      y(phi)=sin(phi)*r
 
-z(phy)=CONST
+      z(phy)=CONST
 
 Avec r le rayon du cercle passant par les 4 sommets haut du cube. Tel que : 
 
-r = sqrt(2*c²)/2;
+      r = sqrt(2*c²)/2;
 
 Et z la hauteur des 4 sommets haut.
 
@@ -27,9 +27,9 @@ tel que : ce point est le croisement entre R et la droite CC'
 
 dans le repere plan R(planx,plany):
 
-planx(phi)=-dist_camera_plan/(dist_camera_plan+dist_plan_objet+x(phi))*y(phi);
+      planx(phi)=-dist_camera_plan/(dist_camera_plan+dist_plan_objet+x(phi))*y(phi);
 
-plany(phi)=dist_camera_plan/(dist_camera_plan+dist_plan_objet+x(phi))*z(phi);
+      plany(phi)=dist_camera_plan/(dist_camera_plan+dist_plan_objet+x(phi))*z(phi);
    
 
 
