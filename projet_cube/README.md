@@ -31,6 +31,4 @@ dans le repere plan R(planx,plany):
 
       plany(phi)=dist_camera_plan/(dist_camera_plan+dist_plan_objet+x(phi))*z(phi);
    
-
-
-Voir fichier image equations
+![alt text](https://github.com/pierreravenel/Mini-Projets-C/blob/master/projet_cube/equations.PNG)
