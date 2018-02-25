@@ -1,10 +1,12 @@
 # Objectif : Etude d'un phenomene chaotique & Génération de "monde" à partir d'une clée (xini) qui sont totalement différents en cas de variation de cette clée
 
+![alt text](https://github.com/pierreravenel/Mini-Projets-C/blob/master/projet_cascade_de_doublements_de_periode_phenomene_chaotique/exemple_style_lunary_compresse.PNG)
+
 https://fr.wikipedia.org/wiki/Th%C3%A9orie_du_chaos
 
 === Cascade de doublements de période ===
 
-    Soit : x_{n+1}  = r * x_n * (1 - x_n)
+    Soit : ![equation](x_{n+1}  = r * x_n * (1 - x_n))
 
 où n = 0, 1, …'' dénote le temps discret, x l'unique variable dynamique, et 0 < r < 4 un paramètre.
 
@@ -18,4 +20,4 @@ La dynamique de cette application présente un comportement très différent sel
 Lorsque le paramètre r augmente, on obtient donc une succession de bifurcations entre les comportements périodiques et le chaos :
 https://upload.wikimedia.org/wikipedia/commons/7/7d/LogisticMap_BifurcationDiagram.png
 
-![alt text](https://github.com/pierreravenel/Mini-Projets-C/blob/master/projet_cascade_de_doublements_de_periode_phenomene_chaotique/exemple_style_lunary_compresse.PNG)
+
