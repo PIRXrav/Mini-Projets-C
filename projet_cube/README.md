@@ -1,5 +1,7 @@
 # Objectif : dessiner un cube en 3D dans une fenêtre en deux dimentions avec la librairie SDL.
 
+![alt text](https://github.com/pierreravenel/Mini-Projets-C/blob/master/projet_cube/resultat.png)
+
 Soit un cube de coté c
 Soit un de ses sommets : SM
 
