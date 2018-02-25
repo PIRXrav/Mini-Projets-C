@@ -6,7 +6,8 @@ https://fr.wikipedia.org/wiki/Th%C3%A9orie_du_chaos
 
 === Cascade de doublements de période ===
 
-    Soit : ![equation](x_{n+1}  = r * x_n * (1 - x_n))
+    Soit : <img src="https://latex.codecogs.com/svg.latex?\Large&space;x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}" title="\Large (x_{n+1}  = r * x_n * (1 - x_n)" />
+(x_{n+1}  = r * x_n * (1 - x_n)
 
 où n = 0, 1, …'' dénote le temps discret, x l'unique variable dynamique, et 0 < r < 4 un paramètre.
 
