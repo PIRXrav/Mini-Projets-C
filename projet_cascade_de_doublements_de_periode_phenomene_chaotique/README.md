@@ -1,4 +1,4 @@
-# Objectif : Etude d'un phenomene chaotique & Génération de "monde" à partir d'une clée (xini) qui sont totalement différents en cas de variation de cette clée
+# Objectif : Etude d'un phenomene chaotique & Génération de "monde" à partir d'une clée
 
 ##  Cascade de doublements de période
 ![alt text](https://github.com/pierreravenel/Mini-Projets-C/blob/master/projet_cascade_de_doublements_de_periode_phenomene_chaotique/exemple_style_lunary_compresse.PNG)
