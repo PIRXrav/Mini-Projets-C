@@ -27,7 +27,9 @@ Résolutuion avec la méthode d'euler d'un système d'équations différentielle
 https://fr.wikipedia.org/wiki/M%C3%A9thode_d%27Euler
     
     Soit Xnew = Xlast + Xlast' * deltat
-Tel que Xlast est la vitesse de X à cet instant. On l'applique sur un temps infinitésimal deltat
+Tel que Xlast' est la vitesse de X à cet instant. On l'applique sur un temps infinitésimal deltat.
+
+	v=dx/dt
 
 ## Affichage
 ### Représentation dans une fenetre graphique
