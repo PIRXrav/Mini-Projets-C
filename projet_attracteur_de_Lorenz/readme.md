@@ -11,9 +11,13 @@ L’attracteur de Lorenz est une structure fractale correspondant au comportemen
 
 Objectif :
     1) Etude de l'attracteur de lorenz et resolution de ce système d'équations différentielles
-       avec la méthode d'euler. https://fr.wikipedia.org/wiki/M%C3%A9thode_d%27Euler
+       avec la méthode d'euler. 
+       https://fr.wikipedia.org/wiki/M%C3%A9thode_d%27Euler
+       
     2) Représentation dans une fenetre graphique
+    
     3) Ajout de perspective : VOIR PROJET CUBE ! (Equation de transfert)
+    
     4) Ajout de mouvement (rotation autour d'un axe central) : (Nouveau)
 
 ## Résolution
@@ -22,16 +26,16 @@ Résolutuion avec la méthode d'euler d'un système d'équations différentielle
     https://fr.wikipedia.org/wiki/M%C3%A9thode_d%27Euler
     
     Soit Xnew = Xlast + Xlast' * deltat
-Tel que Xlast est la vitesse de X à cet instant. on l'applique sur un temps infinitésimal deltat
+Tel que Xlast est la vitesse de X à cet instant. On l'applique sur un temps infinitésimal deltat
 
 ## Affichage
 ### Représentation dans une fenetre graphique
 On affiche uniquement deux dimentinos de notre repere à trois dimentions.
 
-###Ajout de perspective
+### Ajout de perspective
 On utilise la profondeur du point pour determiner sa position. Voir projet CUBE.
 
-###Ajout de mouvement : rotation autour d'un axe central (Nouveauté)
+### Ajout de mouvement : rotation autour d'un axe central (Nouveauté)
 
 Etudions comment effectuer la rotation d'un point autour d'un axe. C' est un peu comme dans le projet_CUBE, à l'inverse que l'on controle tous les point indépendament.
 
