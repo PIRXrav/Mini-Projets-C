@@ -29,7 +29,7 @@ https://fr.wikipedia.org/wiki/M%C3%A9thode_d%27Euler
     Soit Xnew = Xlast + Xlast' * deltat
 Tel que Xlast' est la vitesse de X à cet instant. On l'applique sur un temps infinitésimal deltat.
 
-	v=dx/dt
+	v=dx/dt=x'
 
 ## Affichage
 ### Représentation dans une fenetre graphique
