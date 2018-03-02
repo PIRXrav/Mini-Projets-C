@@ -10,6 +10,7 @@ L’attracteur de Lorenz est une structure fractale correspondant au comportemen
     https://fr.wikipedia.org/wiki/Attracteur_de_Lorenz
 
 Objectif :
+
     1) Etude de l'attracteur de lorenz et resolution de ce système d'équations différentielles
        avec la méthode d'euler. 
        https://fr.wikipedia.org/wiki/M%C3%A9thode_d%27Euler
