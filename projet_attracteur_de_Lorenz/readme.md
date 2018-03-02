@@ -7,7 +7,7 @@ L’attracteur de Lorenz est une structure fractale correspondant au comportemen
 
 ![alt text](https://wikimedia.org/api/rest_v1/media/math/render/svg/c32b412baae29eb2c914c397d425023188c3d433)
 
-    https://fr.wikipedia.org/wiki/Attracteur_de_Lorenz
+https://fr.wikipedia.org/wiki/Attracteur_de_Lorenz
 
 Objectifs :
 
@@ -23,7 +23,8 @@ Objectifs :
 ## Résolution
 méthode d'Euler :
 Résolutuion avec la méthode d'euler d'un système d'équations différentielles
-    https://fr.wikipedia.org/wiki/M%C3%A9thode_d%27Euler
+
+https://fr.wikipedia.org/wiki/M%C3%A9thode_d%27Euler
     
     Soit Xnew = Xlast + Xlast' * deltat
 Tel que Xlast est la vitesse de X à cet instant. On l'applique sur un temps infinitésimal deltat
