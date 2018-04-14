@@ -2,11 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define nbo_header 80
-
-#define name_file "teta"
+#define name_file "bunny"
 #define flux_in_file 1
-
 
 /**
 Le format que nous choisissons d’étudier est le format STL (pour STéreoLithographie).
@@ -71,31 +68,59 @@ typedef struct
     //unsigned char octet_de_controle;
 } TRIANGLE_IN_FILE;
 
-void read_STL(const char* fichier)
+TRIANGLE_IN_FILE * read_STL(const char* fichier,int * nb_triangle)
 {
+#define nbo_header 80
+#define print_tr_read_stl 0
+    ///Ouverture fichier read binaire
     FILE* F = fopen(fichier,"rb");
-    if (!F)return NULL;
-
+    if (!F){
+        puts("ERREUR : probleme de fichier !");
+        exit(1);
+    }
+    ///Lecture header
     unsigned char header[nbo_header];
     fread(&header,1,nbo_header,F);
     printf("%s\n",header);
 
-    int nb_triangle;
-    fread( &nb_triangle, sizeof(nb_triangle), 1, F );
-    printf("nombre de triangles = %d\n",nb_triangle);
+    ///Lecture du nombre de triangles
+    fread(nb_triangle, sizeof(int), 1, F );
+    printf("nombre de triangles = %d\n",*nb_triangle);
 
-    TRIANGLE_IN_FILE tr;
+    ///Allocation dynamique de la mémoire pour les triangles
+    TRIANGLE_IN_FILE *tr = calloc(*nb_triangle, sizeof(TRIANGLE_IN_FILE));
+    if (!tr){
+        puts("ERREUR : probleme de memoire !");
+        exit(1);
+    }
+
+    ///Lecture des triangles
     int i;
     unsigned char octetCR[2];
-    for(i=0; i<nb_triangle; i++)
+    for(i=0; i<*nb_triangle-1; i++)
     {
-        fread(&tr, sizeof(tr), 1, F);
+        fread(tr+i, sizeof(TRIANGLE_IN_FILE), 1, F);
         fread(&octetCR,sizeof(octetCR), 1, F);  //On lit les deux octet de controle
+    }
+    printf("size : %d",sizeof(*tr));
+
+#if print_tr_read_stl
+    ///affichage
+    for(i=0; i<*nb_triangle; i++){
         printf("========================================================\n");
         printf("Triangle %d : \n",i+1);
-        print_cord_triangle(tr);
+        print_cord_triangle(tr[i]);
     }
+#endif // print_tr_read_stl
+
+    ///Fermeture du fichier
     fclose(F);
+    ///On retourne tr
+    return tr;
+    /**
+    Note : on ne peux pas faire passer tr en arument... etrange
+        Solution -> return tr
+    */
 }
 
 void print_cord_point(POINT aff)
@@ -114,20 +139,47 @@ void print_cord_triangle(TRIANGLE_IN_FILE tr)
     print_cord_point(tr.c);
 }
 
+char * set_input_file(char * name_file_fc,char * extention){
+    ///static force la conservation du tableau
+    static char input_file[100]= {"\0"};
+    strcat(input_file,name_file_fc);
+    strcat(input_file,extention);
+    return input_file;
+}
+
+char * set_output_file(char * name_file_fc){
+    static char output_file[100]= {"\0"};
+    strcat(output_file,name_file);
+    strcat(output_file,"_output.txt");
+    return output_file;
+}
+
 int main()
 {
-    char input_file[100]= {"\0"};
-    strcat(input_file,name_file);
-    strcat(input_file,".stl");
+    char * input_file = set_input_file(name_file,".stl");
     printf("Input file : %s\n",input_file);
 #if flux_in_file
-    char output_file[100]= {"\0"};
-    strcat(output_file,name_file);
-    strcat(output_file,"_dv.txt");
+    char * output_file = set_output_file(name_file);
     printf("Output file : %s\n",output_file);
     fclose(stdout);
     fopen(output_file,"w");
 #endif // flux_in_file
-    read_STL(input_file);
+
+
+    //Main
+    int nb_triangle;
+    TRIANGLE_IN_FILE *tr;
+    tr = read_STL(input_file,&nb_triangle);
+
+
+    int i;
+    for(i=0; i<nb_triangle; i++){
+        printf("========================================================\n");
+        printf("Triangle %d : \n",i+1);
+        print_cord_triangle(tr[i]);
+    }
+
+    free(tr);//ca soulage :)
+
     return 0;
 }
