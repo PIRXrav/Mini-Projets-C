@@ -1120,7 +1120,7 @@ int main (int argc, char** argv )
         p = vfp(wait_clic());
         //p.x = rand()%(xs-200)+100;
         //p.y = rand()%(ys-200)+100;
-        /// Dans tous les tr, on récupere le nombre et l'adresses des tr ou il y a collision ===== 333
+        /// Dans tous les tr, on récupere le nombre et l'adresses des tr ou il y a colision ===== 333
         ///Correspond à l'ensembre des points de l'envelope PAS PAS PAS PAS PAS convexe ???
 
         for(i=0;i<NBTR;i++){
