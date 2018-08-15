@@ -9,12 +9,12 @@ En mathématiques et plus particulièrement en géométrie algorithmique, la tri
 
 Objectif :
    Fait ->
-    1) Etude
-    2) Triangulation de Delaunay 2D
-    3) Ajout du diagramme de Voronoï (T)
+        1) Etude
+        2) Triangulation de Delaunay 2D
+        3) Ajout du diagramme de Voronoï (T)
    A faire ->
-    4) On cherche à déterminer quels sont les arêtes de T qui ne sont pas sur la surface : Algorithme de Crust
-    5) ... 3D
+        4) On cherche à déterminer quels sont les arêtes de T qui ne sont pas sur la surface : Algorithme de Crust
+        5) ... 3D
 
 ## Resultats
 ![alt text](delaunay_complete_circle.PNG)
