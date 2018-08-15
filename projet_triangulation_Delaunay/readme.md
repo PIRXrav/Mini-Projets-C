@@ -7,7 +7,7 @@ En mathématiques et plus particulièrement en géométrie algorithmique, la tri
 
     https://fr.wikipedia.org/wiki/Attracteur_de_Lorenz
 
-Objectif :
+###Objectif :
    Fait ->
    
         1) Etude
