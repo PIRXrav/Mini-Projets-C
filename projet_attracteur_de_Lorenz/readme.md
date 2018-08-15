@@ -17,8 +17,8 @@ Objectifs :
 	2) Représentation dans une fenetre graphique
     
    	3) Ajout de perspective : VOIR PROJET CUBE ! (Equation de transfert)
-    
-    	4) Ajout de mouvement (rotation autour d'un axe central) : (Nouveau)
+	
+	4) Ajout de mouvement (rotation autour d'un axe central) : (Nouveau)
 
 ## Résolution
 méthode d'Euler :
