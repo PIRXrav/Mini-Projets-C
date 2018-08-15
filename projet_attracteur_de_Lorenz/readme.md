@@ -11,14 +11,14 @@ https://fr.wikipedia.org/wiki/Attracteur_de_Lorenz
 
 Objectifs :
 
-    1) Etude de l'attracteur de lorenz et resolution de ce système d'équations différentielles
+	1) Etude de l'attracteur de lorenz et resolution de ce système d'équations différentielles
        avec la méthode d'euler. 
        
-    2) Représentation dans une fenetre graphique
+	2) Représentation dans une fenetre graphique
     
-    3) Ajout de perspective : VOIR PROJET CUBE ! (Equation de transfert)
+   	3) Ajout de perspective : VOIR PROJET CUBE ! (Equation de transfert)
     
-    4) Ajout de mouvement (rotation autour d'un axe central) : (Nouveau)
+    	4) Ajout de mouvement (rotation autour d'un axe central) : (Nouveau)
 
 ## Résolution
 méthode d'Euler :
