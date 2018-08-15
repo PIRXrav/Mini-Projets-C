@@ -1,4 +1,4 @@
-# Objectif : Triangulation 2D/3D
+# Objectif : Triangulation 2D/3D (brouillon)
    Fait ->
    
         1) Etude
