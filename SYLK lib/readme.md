@@ -1,4 +1,15 @@
 # SYLK lib
+
+*SYLK_TAB = SYLK_NewTab(5,5);*
+
+|   	| A      	| B    	| C 	| D                 	| E        	|
+|---	|--------	|------	|---	|-------------------	|----------	|
+| 1 	| MESSAG 	| 1    	| 2 	| 3                 	| 4        	|
+| 2 	| 1      	| test 	| 3 	| 4                 	| 5        	|
+| 3 	| 2      	| 3    	|   	| 5                 	| 6        	|
+| 4 	| 3      	| 4    	| 5 	| 3,3333333333E+049 	| 7        	|
+| 5 	| 4      	| 5    	| 6 	| 7                 	| 6,6E+050 	|
+
 ## Details
 
 Cette librairie permet de lire et d'écrire des fichier slk (SYLK). Les champs des cellules sont des entiers ou des flottants, ou des messages.
