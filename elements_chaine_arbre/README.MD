@@ -1,4 +1,4 @@
-# Objectif : Creation d'une nouvelle structure de données à partir d'éléments chainés
+# Objectif : Creation d'une structure de données à partir d'éléments chainés
 
 ## Schéma
 ![alt text](schema.jpg)
