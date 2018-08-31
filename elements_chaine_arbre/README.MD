@@ -4,6 +4,7 @@
 ![alt text](schema.jpg)
 
 ## Output main
+
 initialisation
 Affichage :
 obj[0]=(NUM)case[0]
