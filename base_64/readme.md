@@ -1,5 +1,5 @@
 # Convertisseur base 64
-En informatique, base64 est un codage de l'information utilisant 64 caractères. Ll est principalement utilisé pour la transmission de messages (courrier électronique et forums Usenet) sur Internet.
+En informatique, base64 est un codage de l'information utilisant 64 caractères. Il est principalement utilisé pour la transmission de messages (courrier électronique et forums Usenet) sur Internet.
 ## Etude
 Un alphabet de 65 caractères est utilisé pour permettre la représentation de 6 bits par un caractère. Le 65e caractère (signe «=») n'est utilisé qu'en complément final dans le processus de codage d'un message.
 
